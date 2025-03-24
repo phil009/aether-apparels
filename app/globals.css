@@ -1,26 +1,180 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Light.eot");
+  src: local("Beatrice Deck Light"), local("BeatriceDeck-Light"),
+    url("/fonts/BeatriceDeck-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Light.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Light.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-BoldItalic.eot");
+  src: local("Beatrice Deck Bold Italic"), local("BeatriceDeck-BoldItalic"),
+    url("/fonts/BeatriceDeck-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-BoldItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-BoldItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Bold.eot");
+  src: local("Beatrice Deck Bold"), local("BeatriceDeck-Bold"),
+    url("/fonts/BeatriceDeck-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Bold.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Bold.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-LightItalic.eot");
+  src: local("Beatrice Deck Light Italic"), local("BeatriceDeck-LightItalic"),
+    url("/fonts/BeatriceDeck-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-LightItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-LightItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Extrabold.eot");
+  src: local("Beatrice Deck Extrabold"), local("BeatriceDeck-Extrabold"),
+    url("/fonts/BeatriceDeck-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Extrabold.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Extrabold.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Extrabold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-ExtraboldItalic.eot");
+  src: local("Beatrice Deck Extrabold It"),
+    local("BeatriceDeck-ExtraboldItalic"),
+    url("/fonts/BeatriceDeck-ExtraboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-ExtraboldItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-ExtraboldItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-ExtraboldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-ThinItalic.eot");
+  src: local("Beatrice Deck Thin Italic"), local("BeatriceDeck-ThinItalic"),
+    url("/fonts/BeatriceDeck-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-ThinItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-ThinItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Thin.eot");
+  src: local("Beatrice Deck Thin"), local("BeatriceDeck-Thin"),
+    url("/fonts/BeatriceDeck-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Thin.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Thin.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Medium.eot");
+  src: local("Beatrice Deck Medium"), local("BeatriceDeck-Medium"),
+    url("/fonts/BeatriceDeck-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Medium.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Medium.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-RegularItalic.eot");
+  src: local("Beatrice Deck Regular Ital"), local("BeatriceDeck-RegularItalic"),
+    url("/fonts/BeatriceDeck-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-RegularItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-RegularItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-MediumItalic.eot");
+  src: local("Beatrice Deck Medium Itali"), local("BeatriceDeck-MediumItalic"),
+    url("/fonts/BeatriceDeck-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-MediumItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-MediumItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-Regular.eot");
+  src: local("Beatrice Deck Regular"), local("BeatriceDeck-Regular"),
+    url("/fonts/BeatriceDeck-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-Regular.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-Regular.woff") format("woff"),
+    url("/fonts/BeatriceDeck-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beatrice Deck";
+  src: url("/fonts/BeatriceDeck-SemiboldItalic.eot");
+  src: local("Beatrice Deck Semibold Ita"), local("BeatriceDeck-SemiboldItalic"),
+    url("/fonts/BeatriceDeck-SemiboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/BeatriceDeck-SemiboldItalic.woff2") format("woff2"),
+    url("/fonts/BeatriceDeck-SemiboldItalic.woff") format("woff"),
+    url("/fonts/BeatriceDeck-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  font-family: "Beatrice Deck", sans-serif;
 }
