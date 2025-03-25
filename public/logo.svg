@@ -1,4 +1,7 @@
-<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="14.5" width="20.5061" height="20.5061" transform="rotate(45 14.5 0)" fill="#D9D9D9"/>
-<path d="M14.75 14.5L14.75 0.603553L28.6464 14.5L14.75 28.3964V14.5Z" fill="black" stroke="#060606" stroke-width="0.5"/>
+<svg width="113" height="103" viewBox="0 0 113 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="78.5435" y1="55.5" x2="32.5435" y2="55.5" stroke="#BABABA" stroke-width="7"/>
+<line x1="78.5435" y1="55.5" x2="55.5435" y2="55.5" stroke="black" stroke-width="7"/>
+<path d="M112.087 97.8539C88.2566 97.8532 56.2254 1.09905 56.2254 1.09905" stroke="black" stroke-width="7"/>
+<path d="M8.12461e-05 97.8639C23.8303 97.8632 55.8615 1.10906 55.8615 1.10906" stroke="#BABABA" stroke-width="7"/>
+<line x1="56.0435" y1="101" x2="56.0435" y2="-1.5299e-07" stroke="#BABABA" stroke-width="7"/>
 </svg>
